@@ -5,6 +5,7 @@
 set relativenumber
 set laststatus=2
 set encoding=utf-8
+set mouse=a
 
 " Creates a NORMAL mode mapping for toggling the terminal
 " Note: default leader is '\'
