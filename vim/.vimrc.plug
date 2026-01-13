@@ -27,4 +27,9 @@ Plug 'mattn/vim-lsp-settings'
 " Adds Auto-completion UI
 Plug 'prabirshrestha/asyncomplete.vim'
 
+" YouCompleteMe Plugin
+" Code completion engine for Vim
+" last available at https://github.com/ycm-core/YouCompleteMe
+Plug 'ycm-core/YouCompleteMe'
+
 call plug#end()
