@@ -105,8 +105,10 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # startup
+kitty @ set-background-image "$(find $HOME/.kitty_backgrounds -type f | shuf -n 1)"
 pokemon-colorscripts --no-title -r 1-5
 
 # Personal aliases
 alias l="ls -aB --sort=width"
 alias top=btop
+
