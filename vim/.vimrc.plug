@@ -19,17 +19,7 @@ Plug 'vim-airline/vim-airline'
 " last available at https://github.com/farmergreg/vim-lastplace
 Plug 'farmergreg/vim-lastplace'
 
-" LSP and LSP-Settings plugins
-" Allows for easy configuration of LSPs in Vim
-" last available at https://github.com/mattn/vim-lsp-settings
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
-" Adds Auto-completion UI
-Plug 'prabirshrestha/asyncomplete.vim'
-
-" YouCompleteMe Plugin
-" Code completion engine for Vim
-" last available at https://github.com/ycm-core/YouCompleteMe
-Plug 'ycm-core/YouCompleteMe'
+Plug 'rust-lang/rust.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()

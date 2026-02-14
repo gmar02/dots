@@ -2,15 +2,14 @@
 " General configs 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+syntax on
 set relativenumber
-set laststatus=2
 set encoding=utf-8
 set mouse=a
+" Recommended for improving ux with Coc
+set updatetime=300 
+set signcolumn=yes
 
-" Creates a NORMAL mode mapping for toggling the terminal
-" Note: default leader is '\'
-nnoremap <leader>t :split<CR>:terminal<CR>
-nnoremap <leader>c <C-w>c
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-Plug package manager related configs
@@ -36,3 +35,14 @@ let NERDTreeShowHidden=1
 let NERDTreeDirArrows=1
 
 let NERDTreeMinimalUI=1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Coc Plugin related configs 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" <TAB> next suggestion
+" <Shift + Tab> previous suggestion
+" <Enter> accept suggestion
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <silent><expr> <S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+inoremap <silent><expr> <CR> pumvisible() ? coc#_select_confirm() : "\<CR>"
+
